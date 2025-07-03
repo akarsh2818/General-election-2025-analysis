@@ -1,45 +1,87 @@
-# 🗳️ General Election 2025 Analysis – SQL Server & Excel Project
+# 🇮🇳 General Election 2025 Analysis
 
-This project focuses on analyzing the General Election 2025 data using SQL Server and Excel to uncover meaningful political and demographic insights.
+This project provides an end-to-end data analysis of the **Indian General Election 2025** using **SQL Server**, **Excel**, and **Power BI**. It includes data modeling, advanced querying, and an interactive dashboard to help users visualize national and regional election insights.
 
----
+## 📂 Project Structure
 
-## 📌 Project Overview
-
-- Cleaned and prepared raw election data using **Microsoft Excel**
-- Imported structured data into **SQL Server**, and built relationships across key tables (Votes, Candidates, Constituencies, Parties)
-- Used **advanced SQL queries** to extract insights and answer critical questions about voter turnout, party performance, and regional patterns
+- **Data Source:** Cleaned and structured Excel datasets
+- **Database:** SQL Server with a 5-table relational schema
+- **BI Tool:** Power BI for building a multi-page interactive dashboard
 
 ---
 
-## 🧠 Key SQL Concepts Used
+## 🔧 Tools & Technologies
 
-- **JOINS** (INNER, LEFT) to combine data from multiple tables
-- **Aggregate Functions** (`SUM`, `AVG`, `COUNT`) for summary metrics
-- **Window Functions** (`RANK()`, `ROW_NUMBER()`) for comparative analysis
-- **CTEs** (Common Table Expressions) to simplify complex logic
-- **Subqueries** to filter and summarize nested results
-
----
-
-## 📊 Example Questions Answered
-
-- Which party performed best in each state?
-- What was the average voter turnout by region?
-- Who were the top 5 winning candidates by margin?
-- How did turnout and performance vary across constituencies?
+- **SQL Server** (Data querying, CTEs, joins, aggregates)
+- **Power BI** (DAX, visualizations, bookmarks, drill-through)
+- **Excel** (Initial data preparation & structure)
+- **DAX Measures** (for KPIs, percentages, custom metrics)
 
 ---
 
-## 📂 Tools & Technologies
+## 📊 Key Dashboards & Features
 
-- Microsoft Excel (for data cleaning and preparation)
-- SQL Server Management Studio (SSMS) for data modeling and querying
+### 1️⃣ Overview Analysis
+- Total seats and % share won by:
+  - **NDA Alliance**
+  - **I.N.D.I.A. Alliance**
+  - **Independent/Others**
+- Grid matrix with all winning parties (via bookmarks)
+- Party logos and clear visual distinctions
 
 ---
 
-## 🚀 Getting Started
+### 2️⃣ State Demographic Analysis
+- **Map chart** showing state-wise:
+  - Total seats
+  - NDA/I.N.D.I.A./Other wins
+  - Majority alliance
+- Tooltip & drill-through to detailed state/constituency data
+- Bubble map showing winning candidates with vote margins
 
-1. Clone this repo
-2. Load the SQL scripts into your SQL Server instance
-3. Open the Excel data files (if shared) for reference or preprocessing
+---
+
+### 3️⃣ Political Landscape by State
+- Filterable state-wise breakdown
+- Donut chart showing **party-wise seat share**
+- Grid view with party + alliance labels (NDA, I.N.D.I.A., Others)
+
+---
+
+### 4️⃣ Constituency Analysis
+- KPIs: Total votes, EVM votes, postal votes, total candidates
+- Candidate performance cards for:
+  - Winner, Runner-up, 2nd Runner-up
+  - Vote count and % share
+  - Margin of victory
+
+---
+
+### 5️⃣ Constituency Details Grid
+- Tabular view with:
+  - Winning/Runner-up Candidates
+  - Party, Alliance, EVM & Postal votes
+  - Total votes & Margin
+- Drill-through enabled from other dashboards
+- **Export to Excel** and **refresh all** functionality (via bookmarks)
+
+---
+
+### 6️⃣ Landing Page
+- User-friendly homepage with clickable buttons to navigate:
+  - Overview
+  - State Analysis
+  - Constituency View
+- Responsive layout, hover effects, and clean UI
+
+---
+
+## 📌 Analytical Objectives
+
+- Compare **party & alliance performance** at national and regional levels
+- Identify states with **highest seat share** by NDA or I.N.D.I.A.
+- Examine **vote margins** and **candidate-level competition**
+- Enable interactive, visual storytelling of election results
+
+---
+
